@@ -10,8 +10,9 @@
 		<title>MO Demo</title>
 		
 		<!-- Подключаем CSS -->
-	  	<link rel="stylesheet" href="css/mo.css">	
-	  		
+	  	<link rel="stylesheet" href="css/MO.css">	
+	  	
+	  	<!-- Стили для демо страници -->
 		<style type="text/css">
 			body { font-family: "HelveticaNeue","Helvetica-Neue", "Helvetica", "Arial", sans-serif; }
 			.big-link { display:block; margin-top: 100px; text-align: center; font-size: 70px; color: #06f; }
@@ -19,31 +20,38 @@
 		
 	</head>
 	<body>
-
+	
+	
+		<!-- первая ссылка которая откроет контекст с id 1 -->
 		<a href="#" class="big-link" data-mo-id="1" data-animation="fadeAndPop">
 			Появление и скачек(fade pop)
 		</a>	
 		
+		<!-- вторая ссылка которая откроет контекст с id 2 -->
 		<a href="#" class="big-link" data-mo-id="2" data-animation="fade">
 			Просто появление(fade)
 		</a>
 		
+		<!-- третья ссылка которая откроет контекст с id 3 -->
 		<a href="#" class="big-link" data-mo-id="3" data-animation="none">
 			Без эффектов(none)
 		</a>
 
+		<!-- первый контекст, который будет открыт по ссылке с id 1 -->
 		<div id="1" class="mo">
 			<a class="close-mo">&#215;</a>
 				<h1>Заглавный текст</h1>
 				<p>просто текст для проверки модального окна(fadeAndPop)</p>
 		</div>
 		
+		<!-- второй контекст, который будет открыт по ссылке с id 2 -->
 		<div id="2" class="mo">
 			<a class="close-mo">&#215;</a>
 				<h1>Заглавный текст</h1>
 				<p>просто текст для проверки модального окна(fade)</p>
 		</div>
 		
+		<!-- третий контекст, который будет открыт по ссылке с id 3 -->
 		<div id="3" class="mo">
 			<a class="close-mo">&#215;</a>
 				<h1>Заглавный текст</h1>
