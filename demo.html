@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- 
+ * Плагин jQuery MO v 1.1
+ * Copyright 2015, Nip4Fun
+ * Бесплатная лицензия (opensource).
+ * http://www.opensource.org/licenses/mit-license.php
+ --> 
+	<head>
+		<meta charset="utf-8" />
+		<title>MO Demo</title>
+		
+		<!-- Подключаем CSS -->
+	  	<link rel="stylesheet" href="css/MO.css">	
+	  		
+		<style type="text/css">
+			body { font-family: "HelveticaNeue","Helvetica-Neue", "Helvetica", "Arial", sans-serif; }
+			.big-link { display:block; margin-top: 100px; text-align: center; font-size: 70px; color: #06f; }
+		</style>
+		
+	</head>
+	<body>
+
+		<a href="#" class="big-link" data-mo-id="1" data-animation="fadeAndPop">
+			Появление и скачек(fade pop)
+		</a>	
+		
+		<a href="#" class="big-link" data-mo-id="2" data-animation="fade">
+			Просто появление(fade)
+		</a>
+		
+		<a href="#" class="big-link" data-mo-id="3" data-animation="none">
+			Без эффектов(none)
+		</a>
+
+		<div id="1" class="mo">
+			<a class="close-mo">&#215;</a>
+				<h1>Заглавный текст</h1>
+				<p>просто текст для проверки модального окна(fadeAndPop)</p>
+		</div>
+		
+		<div id="2" class="mo">
+			<a class="close-mo">&#215;</a>
+				<h1>Заглавный текст</h1>
+				<p>просто текст для проверки модального окна(fade)</p>
+		</div>
+		
+		<div id="3" class="mo">
+			<a class="close-mo">&#215;</a>
+				<h1>Заглавный текст</h1>
+				<p>просто текст для проверки модального окна(none)</p>
+		</div>
+
+<!-- Подключаем Jquery -->		
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- Подключаем Jquery MO -->
+<script type="text/javascript" src="js/jquery.mo.js"></script>
+</body>
+</html>
